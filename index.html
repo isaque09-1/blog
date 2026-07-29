@@ -6,35 +6,20 @@
     <title>Blog de Isaque</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mnjerdja"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
 <body>
     <header class="hero">
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#sobre">Sobre</a>
             <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
         </nav>
 
         <div class="hero-content" id="home">
             <p class="tag">Bem-vindo ao meu blog</p>
             <h1>Olá, eu sou Isaque</h1>
             <p>Tenho 16 anos, estou cursando o ensino médio com técnico em Desenvolvimento de Sistemas e gosto muito de tecnologia, jogos e programação.</p>
-            <a href="#sobre" class="btn">Conheça mais</a>
+            <a href="#contato" class="btn">Tenho uma dúvida</a>
         </div>
     </header>
 
@@ -57,6 +42,22 @@
         <section class="card">
             <h2>Interesses</h2>
             <p>Além de estudar programação, gosto de jogos, tecnologia e explorar ideias que podem virar projetos no futuro.</p>
+        </section>
+
+        <section class="card" id="contato">
+            <h2>Tem alguma dúvida?</h2>
+            <p>Envie uma mensagem e eu respondo assim que puder.</p>
+            <form action="https://formspree.io/f/mnjerdja" method="POST" class="contact-form">
+                <label>
+                    Seu e-mail:
+                    <input type="email" name="email" placeholder="seuemail@email.com" required>
+                </label>
+                <label>
+                    Sua mensagem:
+                    <textarea name="message" placeholder="Escreva sua dúvida aqui..." required></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 </body>
