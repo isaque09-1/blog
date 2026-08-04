@@ -5,213 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaque | Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-
     <header>
         <nav class="navbar">
-            <a href="#home" class="logo">Isaque</a>
+            <a class="logo" href="#home">Isaque</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#ia">IA</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Olá, eu sou <span class="destaque">Isaque</span></h1>
-            <p>Tenho 16 anos, estudo no Colégio Estadual Eron Domingues e sou apaixonado por tecnologia, programação e jogos.</p>
-            <div class="hero-buttons">
-                <a href="#ia" class="btn btn-primary">Falar com a IA</a>
-                <a href="#contato" class="btn btn-secondary">Fale Comigo</a>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Olá, eu sou <span class="destaque">Isaque</span></h1>
+                <p>Tenho 16 anos, estudo no Colégio Estadual Eron Domingues e sou apaixonado por tecnologia, programação e jogos.</p>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#contato">Fale comigo</a>
+                    <a class="btn btn-secondary" href="#habilidades">Ver habilidades</a>
+                </div>
             </div>
-    </section>
+        </section>
 
-
-    <section id="sobre" class="section fade-in">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <div class="sobre-content">
-                <div class="sobre-texto">
-                    <p>Meu nome é <strong>Isaque</strong>, tenho 16 anos e estudo no <strong>Colégio Estadual Eron Domingues</strong>. Sou uma pessoa curiosa e determinada, sempre em busca de aprender coisas novas na área de tecnologia.</p>
-                    <p>Nas horas vagas, gosto de jogar e explorar novidades tecnológicas. Tenho grande interesse em desenvolvimento de sistemas e estou sempre buscando evoluir minhas habilidades como programador.</p>
-                </div>
-                <div class="sobre-info">
-                    <div class="info-card">
-                        <span class="info-label">Idade</span>
-                        <span class="info-valor">16 anos</span>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-label">Escola</span>
-                        <span class="info-valor">C.E. Eron Domingues</span>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-label">Área</span>
-                        <span class="info-valor">Desenvolvimento</span>
-                    </div>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <p class="section-subtitle">Um jovem curioso, dedicado e sempre buscando aprender mais.</p>
+                <p>Meu nome é Isaque, tenho 16 anos e estudo no Colégio Estadual Eron Domingues. Sou curioso e gosto de aprender coisas novas na área de tecnologia.</p>
+                <p>Nas horas vagas, gosto de jogar e explorar novidades tecnológicas. Tenho interesse em desenvolvimento de sistemas e estou sempre buscando evoluir.</p>
             </div>
-    </section>
+        </section>
 
-    <!-- ===== HABILIDADES ===== -->
-    <section id="habilidades" class="section fade-in">
-        <div class="container">
-            <h2>Habilidades</h2>
-            <p class="section-subtitle">Tecnologias que já estudei e venho desenvolvendo</p>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Java</h3>
-                    <p>Conhecimentos básicos em lógica de programação com Java.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <p>Boa base em Python, automação e scripts.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>React Native</h3>
-                    <p>Noções de desenvolvimento mobile com React Native.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>HTML & CSS</h3>
-                    <p>Criação de sites responsivos e estilizados.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Git & GitHub</h3>
-                    <p>Versionamento de código e colaboração em projetos.</p>
-                </div>
-        </div>
-    </section>
-
-    <!-- ===== CHAT COM IA ===== -->
-    <section id="ia" class="section fade-in">
-        <div class="container">
-            <h2>Fale com a IA</h2>
-            <p class="section-subtitle">Tire dúvidas rápidas sobre tecnologia, programação ou estudos.</p>
-
-            <div class="chat-container">
-                <div class="chat-box" id="chatBox">
-                    <div class="chat-message ia-message">
-                        <strong>IA:</strong> Olá! Pergunte algo sobre programação, tecnologia ou estudos.
+        <section id="habilidades" class="section">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Java</h3>
+                        <p>Básico em lógica de programação</p>
                     </div>
-                <form id="chatForm" class="chat-form">
-                    <input type="text" id="chatInput" placeholder="Digite sua pergunta..." required>
-                    <button type="submit">Enviar</button>
-                </form>
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                        <p>Boa base em automação</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>React Native</h3>
+                        <p>Noções de desenvolvimento mobile</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>HTML e CSS</h3>
+                        <p>Criação de páginas simples e organizadas</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Conhecimento básico em interatividade e lógica no navegador</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Git e GitHub</h3>
+                        <p>Uso de versionamento e publicação de projetos no GitHub</p>
+                    </div>
+                </div>
             </div>
-    </section>
+        </section>
 
-    <!-- ===== CONTATO ===== -->
-    <section id="contato" class="section fade-in">
-        <div class="container">
-            <h2>Contato</h2>
-            <p class="section-subtitle">Tem alguma dúvida ou quer trocar uma ideia? Mande uma mensagem!</p>
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p class="section-subtitle">Tem alguma dúvida? Me manda uma mensagem!</p>
 
-            <form action="https://formspree.io/f/mnjerdja" method="POST" class="contato-form">
-                <label>
-                    Seu e-mail
-                    <input type="email" name="email" placeholder="seuemail@email.com" required>
-                </label>
-                <label>
-                    Sua mensagem
-                    <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
-                </label>
-                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+                <div class="contato-grid">
+                    <div class="card-contato">
+                        <h3>Formspree</h3>
+                        <p>Envie uma mensagem direta para mim.</p>
+                        <form class="contato-form" action="https://formspree.io/f/mnjerdja" method="POST">
+                            <input type="email" name="email" placeholder="Seu e-mail" required>
+                            <textarea name="message" placeholder="Escreva sua mensagem..." required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
 
-    <!-- ===== FOOTER ===== -->
+                    <div class="card-contato">
+                        <h3>IA do n8n</h3>
+                        <p>Converse com a minha IA.</p>
+                        <div class="chat-box">
+                            <div id="chat-messages" class="chat-messages">
+                                <div class="message ai">Olá! Eu sou a IA do Isaque. Me envie uma mensagem e eu respondo.</div>
+                            </div>
+
+                            <form id="meu-form" class="contato-form">
+                                <textarea id="message" placeholder="Escreva sua mensagem..." required></textarea>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 Isaque. Todos os direitos reservados.</p>
     </footer>
 
     <script>
-        // ---- CONFIGURAÇÕES ----
-        const WEBHOOK = 'https://isaque-09.app.n8n.cloud/webhook-test/95ce9a6b-975d-4a31-a70e-375c4ecd1f81';
+        const form = document.getElementById('meu-form');
+        const chatMessages = document.getElementById('chat-messages');
+        const messageInput = document.getElementById('message');
 
-        // ---- CHAT COM IA ----
-        const chatForm = document.getElementById('chatForm');
-        const chatInput = document.getElementById('chatInput');
-        const chatBox = document.getElementById('chatBox');
-
-        if (chatForm) {
-            chatForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const pergunta = chatInput.value.trim();
-                if (!pergunta) return;
-
-                chatBox.innerHTML += '<div class="chat-message user-message"><strong>Você:</strong> ' + pergunta + '</div>';
-                chatBox.innerHTML += '<div class="chat-message ia-message" id="digitando"><em>IA está digitando...</em></div>';
-                chatInput.value = '';
-                chatBox.scrollTop = chatBox.scrollHeight;
-
-                try {
-                    const res = await fetch(WEBHOOK, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ chatInput: pergunta })
-                    });
-
-                    // Lê como texto primeiro para evitar erro de parse
-                    const text = await res.text();
-                    let reply = text;
-
-                    try {
-                        const data = JSON.parse(text);
-                        reply = data.response || data.reply || data.answer || data.message || data.output || data.text || JSON.stringify(data);
-                    } catch (e) {
-                        // Se não for JSON, usa o texto puro
-                        reply = text || "Resposta vazia do servidor";
-                    }
-
-                    const digitando = document.getElementById('digitando');
-                    if (digitando) digitando.remove();
-                    chatBox.innerHTML += '<div class="chat-message ia-message"><strong>IA:</strong> ' + reply + '</div>';
-                    chatBox.scrollTop = chatBox.scrollHeight;
-                } catch (err) {
-                    const digitando = document.getElementById('digitando');
-                    if (digitando) digitando.remove();
-                    chatBox.innerHTML += '<div class="chat-message ia-message error"><strong>IA:</strong> Erro de conexão: ' + err.message + '</div>';
-                    chatBox.scrollTop = chatBox.scrollHeight;
-                }
-            });
+        function addMessage(text, sender) {
+            const div = document.createElement('div');
+            div.className = `message ${sender}`;
+            div.innerHTML = marked.parse(text);
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
-        // ---- SCROLL SUAVE ----
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const message = messageInput.value.trim();
+
+            if (!message) return;
+
+            addMessage(message, 'user');
+            addMessage('🤖 A IA está pensando...', 'ai');
+            messageInput.value = '';
+
+            try {
+                const response = await fetch('https://isaque-09.app.n8n.cloud/webhook/95ce9a6b-975d-4a31-a70e-375c4ecd1f81', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Erro ${response.status}`);
                 }
-            });
-        });
 
-        // ---- FADE-IN AO SCROLL ----
-        const observerOptions = {
-            threshold: 0.15,
-            rootMargin: '0px 0px -50px 0px'
-        };
+                const data = await response.json();
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
+                const lastMessage = chatMessages.lastElementChild;
+                if (lastMessage) {
+                    lastMessage.remove();
                 }
-            });
-        }, observerOptions);
 
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
+                addMessage(data.output || 'Não houve resposta da IA.', 'ai');
+            } catch (error) {
+                const lastMessage = chatMessages.lastElementChild;
+                if (lastMessage) {
+                    lastMessage.remove();
+                }
+                addMessage('Não foi possível conectar com a IA no momento. Tente novamente.', 'ai');
+            }
         });
     </script>
 </body>
